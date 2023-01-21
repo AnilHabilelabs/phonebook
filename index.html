@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="./style/main.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Outer Div -->
+    <div class="mainDiv">
+      <!-- Inner Div -->
+      <div class="userForm">
+        <!-- USER INPUT FORM DIV -->
+        <div class="formDiv">
+          <!-- USER INPUT FORM -->
+          <form onsubmit="saveContact(event)" method="post">
+            <div class="inputFeildFlex">
+              <div class="inputFeild">
+                <label for="fullname">Enter your Full Name</label>
+              </div>
+              <div class="inputFeild">
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Enter Your Name"
+                  id="fullname"
+                />
+              </div>
+            </div>
+
+            <div class="inputFeildFlex">
+              <div class="inputFeild">
+                <label for="telephone">Mobile Number</label>
+              </div>
+              <div class="inputFeild">
+                <input
+                  type="tel"
+                  placeholder="1234567890"
+                  name="telephone"
+                  id="telephone"
+                  maxlength="10"
+                />
+              </div>
+            </div>
+            <div class="inputFeildFlex">
+              <div class="inputFeild">
+                <label for="email">Enter Your Email</label>
+              </div>
+              <div class="inputFeild">
+                <input type="email" name="email" id="email" />
+              </div>
+            </div>
+            <div class="inputFeildFlex inputButton">
+              <div class="inputFeild">
+                <button type="reset">Cancel</button>
+              </div>
+              <div class="inputFeild">
+                <button type="submit">Save</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="phonebookDiv">
+        <div class="contacts">
+          <table class="contactTable">
+            <tr>
+              <th>Sno</th>
+              <th>Full Name</th>
+              <th>Mobile No</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+
+            </tr>
+          </table>
+        </div>
+        <h1 class="noContact">No Contact Saved Yet</h1>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
