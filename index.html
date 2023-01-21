@@ -17,7 +17,7 @@
         <!-- USER INPUT FORM DIV -->
         <div class="formDiv">
           <!-- USER INPUT FORM -->
-          <form onsubmit="saveContact(event)" method="post">
+          <form onsubmit="validation(event)">
             <div class="inputFeildFlex">
               <div class="inputFeild">
                 <label for="fullname">Enter your Full Name</label>
@@ -26,7 +26,7 @@
                 <input
                   type="text"
                   name="fullname"
-                  placeholder="Enter Your Name"
+                  placeholder=" Enter Your Name"
                   id="fullname"
                 />
               </div>
@@ -39,7 +39,7 @@
               <div class="inputFeild">
                 <input
                   type="tel"
-                  placeholder="1234567890"
+                  placeholder=" 1234567890"
                   name="telephone"
                   id="telephone"
                   maxlength="10"
@@ -51,15 +51,15 @@
                 <label for="email">Enter Your Email</label>
               </div>
               <div class="inputFeild">
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" placeholder=" youremail@domain.com" id="email" />
               </div>
             </div>
             <div class="inputFeildFlex inputButton">
               <div class="inputFeild">
-                <button type="reset">Cancel</button>
+                <button type="reset" onclick="cancelbtn()">Cancel</button>
               </div>
               <div class="inputFeild">
-                <button type="submit">Save</button>
+                <button class="savebtn" type="submit" value="Save">Save</button>
               </div>
             </div>
           </form>

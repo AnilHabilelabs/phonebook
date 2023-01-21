@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+
 }
 .mainDiv{
     display: flex;
@@ -9,8 +11,9 @@
 .userForm{
     margin:30px 0  0  30px;
     width: 40%;
-    /* border: 2px solid black; */
-    box-shadow: 2px 4px 4px 6px #ccc;
+    background-color: rgba(243, 240, 228, 0.486);
+    box-shadow: 2px 2px 8px 4px #ccc;
+    height:270px;
 }
 .inputFeildFlex{
     display: flex;
@@ -24,6 +27,20 @@
 }
 .inputFeild{
     margin: 20px;
+    
+}
+.inputFeild input{
+    height: 25px;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color:rgb(236, 236, 236);
+}
+.inputFeild button{
+    height: 25px;
+    width: 60px;
+    border:1px solid black;
+    background-color:rgb(236, 236, 236);
+    border-radius: 5px;
 }
 .phonebookDiv{
     width: 100%;
@@ -31,16 +48,18 @@
 .contacts{
     margin:30px;
     margin-top: 30px;
-    background-color:black;
+    /* background-color:black; */
+    box-shadow: 2px 2px 8px 4px #ccc;
     
 }
 .contactTable tr th{
     border:1px solid black;
-    background-color:rgb(31, 28, 28);
+    background-color:rgb(0, 0, 0);
     width: 180px;
     color:white;
     height: 30px;
-    text-align:center;
+    text-align:justify;
+    padding-left: 25px;
     
 }
 .noContact{
@@ -49,6 +68,16 @@
     justify-content: center;
 }
 .td_tr td{
-    color:white;
-    text-align:center;
+    background-color: rgba(243, 240, 228, 0.486);
+    padding-left:25px;
+    color:rgb(0, 0, 0);
+    text-align:justify;
 }
+.editicon{
+    cursor:grab;
+}
+.deleteicon{
+    padding-left: 20px;
+    cursor:grab;
+}
+
